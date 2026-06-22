@@ -22,3 +22,7 @@ yarn-error.log*
 
 # OS
 $RECYCLE.BIN/
+
+# 本地浏览器自动化配置（截图脚本用，不入仓）
+agent-browser.json
+.browser-data/

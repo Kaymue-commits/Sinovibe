@@ -2,6 +2,26 @@
 
 > 传承国学智慧，解析玄学命理 —— 一个以理性与敬畏之心分享中华传统文化的独立站。
 
+## 页面预览
+
+### 桌面端（1440 × 900）
+
+| 首页 | 国学文化 |
+| :---: | :---: |
+| ![首页](screenshots/01-home.png) | ![国学文化](screenshots/02-guoxue.png) |
+| **玄学命理** | **文章专栏** |
+| ![玄学命理](screenshots/03-xuanxue.png) | ![文章专栏](screenshots/04-articles.png) |
+| **文章详情** | **关于本站** |
+| ![文章详情](screenshots/05-article-detail.png) | ![关于本站](screenshots/06-about.png) |
+| **留言咨询** | **首页全页** |
+| ![留言咨询](screenshots/07-contact.png) | ![首页全页](screenshots/08-home-full.png) |
+
+### 移动端（iPhone 14）
+
+| 首页（移动端） |
+| :---: |
+| ![首页移动端](screenshots/09-home-mobile.png) |
+
 ## 一、项目简介
 
 思源文境是一个面向国学经典、玄学民俗、传统术数文化科普的独立静态站。
