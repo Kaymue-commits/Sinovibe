@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#faf7f0" />
+
+  <title>关于本站 · 思源文境 Sinovibe</title>
+  <meta name="description" content="思源文境是一个以理性与敬畏之心分享中华国学与玄学民俗文化的独立科普站。我们坚信传统文化的价值不在于预言未来，而在于理解过去、安顿当下。" />
+  <meta name="keywords" content="关于思源文境,国学文化站,玄学科普,传统文化,站点理念" />
+  <meta name="author" content="思源文境" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="关于本站 · 思源文境" />
+  <meta property="og:description" content="站点初心、文化传承理念、免责声明。" />
+  <meta property="og:type" content="website" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { DEFAULT: '#1a1714', soft: '#2c2620' },
+            cinnabar: { DEFAULT: '#a93226', light: '#c0392b' },
+            stone: { DEFAULT: '#4a6b7c', deep: '#2c4a5a' },
+            rice: { DEFAULT: '#f5f1e8', soft: '#faf7f0' },
+            paper: '#efe9dc',
+            gold: '#d4a574'
+          },
+          fontFamily: {
+            cn: ['"Noto Serif SC"', '"Songti SC"', 'serif'],
+            display: ['"Ma Shan Zheng"', '"ZCOOL XiaoWei"', '"Noto Serif SC"', 'serif'],
+            en: ['"Cormorant Garamond"', 'Inter', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body class="bg-rice-soft text-ink antialiased">
+
+  <!-- 顶部导航 -->
+  <header class="nav-bar fixed top-0 left-0 right-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <span class="seal seal-sm">思源</span>
+        <span class="hidden sm:flex flex-col leading-tight">
+          <span class="font-display text-xl tracking-widest text-ink">思源文境</span>
+          <span class="font-en text-[10px] tracking-[0.3em] text-stone uppercase">Sinovibe</span>
+        </span>
+      </a>
+      <ul class="hidden lg:flex items-center gap-10 text-sm tracking-[0.2em] text-ink-soft">
+        <li><a href="index.html" data-nav="index.html" class="nav-link">首页</a></li>
+        <li><a href="guoxue.html" data-nav="guoxue.html" class="nav-link">国学文化</a></li>
+        <li><a href="xuanxue.html" data-nav="xuanxue.html" class="nav-link">玄学命理</a></li>
+        <li><a href="articles.html" data-nav="articles.html" class="nav-link">文章专栏</a></li>
+        <li><a href="about.html" data-nav="about.html" class="nav-link active">关于本站</a></li>
+        <li><a href="contact.html" data-nav="contact.html" class="nav-link">留言咨询</a></li>
+      </ul>
+      <button class="menu-btn lg:hidden flex flex-col gap-1.5 p-2" aria-label="打开菜单">
+        <span class="w-6 h-px bg-ink"></span><span class="w-6 h-px bg-ink"></span><span class="w-4 h-px bg-ink"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu lg:hidden">
+    <button class="close-menu absolute top-6 right-6 p-2 text-2xl" aria-label="关闭菜单">×</button>
+    <a href="index.html" data-nav="index.html">首页</a>
+    <a href="guoxue.html" data-nav="guoxue.html">国学文化</a>
+    <a href="xuanxue.html" data-nav="xuanxue.html">玄学命理</a>
+    <a href="articles.html" data-nav="articles.html">文章专栏</a>
+    <a href="about.html" data-nav="about.html" class="active">关于本站</a>
+    <a href="contact.html" data-nav="contact.html">留言咨询</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative pt-40 pb-24 bg-deep overflow-hidden">
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 text-rice">
+      <div class="flex items-center gap-3 mb-6 animate-fade-up">
+        <span class="w-12 h-px bg-cinnabar"></span>
+        <span class="font-en text-sm tracking-[0.4em] text-gold uppercase">About Us</span>
+      </div>
+      <h1 class="font-display text-5xl md:text-7xl tracking-widest mb-6 animate-fade-up delay-1">关 于 本 站</h1>
+      <p class="font-serif-en italic text-xl md:text-2xl text-rice/70 max-w-2xl animate-fade-up delay-2">
+        The story behind this quiet corner of culture.
+      </p>
+    </div>
+  </section>
+
+  <!-- 面包屑 -->
+  <div class="bg-rice-soft border-b border-ink/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 text-sm text-stone tracking-wider">
+      <a href="index.html" class="hover:text-cinnabar transition-colors">首页</a>
+      <span class="mx-2 text-ink/30">/</span>
+      <span class="text-ink">关于本站</span>
+    </div>
+  </div>
+
+  <!-- 站点初心 -->
+  <section class="py-24 md:py-32 bg-rice-soft">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16 reveal">
+        <div class="seal mx-auto mb-8">初心</div>
+        <h2 class="font-display text-4xl md:text-5xl tracking-widest text-ink mb-6">站 点 初 心</h2>
+        <div class="divider-cloud"><span class="divider-ornament"></span></div>
+      </div>
+
+      <div class="prose-classic reveal">
+        <p class="drop-cap">
+          思源文境，源于一个朴素的心愿：<strong>让更多人能以理性与敬畏之心，重新认识中华传统文化</strong>。
+        </p>
+        <p>
+          国学经典、玄学民俗——这些曾经塑造了中华民族精神底色的文化，
+          在当代似乎被两种力量拉扯：一方面是被神秘化、商业化的过度解读，
+          另一方面是被简单化、标签化的忽视。
+        </p>
+        <p>
+          我们希望提供一个"中间地带"：<strong>既不神化，也不矮化</strong>；
+          既保留对传统的敬意，也保持科学理性的清醒。
+        </p>
+        <blockquote>
+          为往圣继绝学，为万世开太平。
+        </blockquote>
+        <p>
+          这不是一句空话，而是一种<strong>实践</strong>——通过一篇文章、一个观点、一次平和的讨论，
+          让古老的智慧在现代生活中找到它应有的位置。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 文化理念 -->
+  <section class="py-24 md:py-32 bg-paper">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="text-center mb-16 reveal">
+        <p class="font-en text-sm tracking-[0.4em] text-cinnabar uppercase mb-3">Our Beliefs</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-widest text-ink">文 化 理 念</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 lg:gap-10">
+        <div class="card-classic frame-corner p-8 lg:p-10 bg-rice-soft reveal">
+          <div class="seal seal-sm mb-6">壹</div>
+          <h3 class="font-display text-2xl tracking-widest text-ink mb-4">理性 · 科学</h3>
+          <p class="text-ink-soft leading-loose">
+            以科学精神看待传统文化，承认其中文化与哲学的价值，
+            去除被后人附会的迷信成分，回归典籍原意。
+          </p>
+        </div>
+
+        <div class="card-classic frame-corner p-8 lg:p-10 bg-rice-soft reveal" style="transition-delay: 0.1s;">
+          <div class="seal seal-sm mb-6" style="background:#2c4a5a;border-color:#2c4a5a;">贰</div>
+          <h3 class="font-display text-2xl tracking-widest text-ink mb-4">敬畏 · 传承</h3>
+          <p class="text-ink-soft leading-loose">
+            保持对传统的敬意。经典是几千年文化的结晶，
+            我们不敢亵渎，亦不敢盲从，唯求平实诚恳地解读。
+          </p>
+        </div>
+
+        <div class="card-classic frame-corner p-8 lg:p-10 bg-rice-soft reveal">
+          <div class="seal seal-sm mb-6" style="background:#d4a574;border-color:#d4a574;">叁</div>
+          <h3 class="font-display text-2xl tracking-widest text-ink mb-4">平和 · 理性</h3>
+          <p class="text-ink-soft leading-loose">
+            不传播焦虑，不渲染神秘，不做吉凶绝对化断言，
+            致力于提供一份平和、冷静、可读的文化内容。
+          </p>
+        </div>
+
+        <div class="card-classic frame-corner p-8 lg:p-10 bg-rice-soft reveal" style="transition-delay: 0.1s;">
+          <div class="seal seal-sm mb-6" style="background:#4a6b7c;border-color:#4a6b7c;">肆</div>
+          <h3 class="font-display text-2xl tracking-widest text-ink mb-4">公益 · 纯粹</h3>
+          <p class="text-ink-soft leading-loose">
+            本站为公益性质的文化科普平台，不开展任何付费预测、
+            改运化解、风水调整等业务，专注于内容本身。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 内容定位 -->
+  <section class="py-24 md:py-32 bg-rice-soft">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12 reveal">
+        <p class="font-en text-sm tracking-[0.4em] text-cinnabar uppercase mb-3">Content Scope</p>
+        <h2 class="font-display text-4xl md:text-5xl tracking-widest text-ink">内 容 定 位</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 reveal">
+        <div class="space-y-4">
+          <h3 class="font-display text-2xl text-cinnabar tracking-widest mb-4">✓ 我 们 写 什 么</h3>
+          <ul class="space-y-3 text-ink-soft leading-loose">
+            <li>· 易经、儒道经典的现代化解读</li>
+            <li>· 八字、五行、干支的文化溯源</li>
+            <li>· 风水、择日等民俗的知识科普</li>
+            <li>· 传统节庆、礼仪的文化记忆</li>
+            <li>· 典籍导读、传统文化常识</li>
+            <li>· 哲学思辨与生活智慧的结合</li>
+          </ul>
+        </div>
+        <div class="space-y-4">
+          <h3 class="font-display text-2xl text-stone tracking-widest mb-4">✗ 我 们 不 写 什 么</h3>
+          <ul class="space-y-3 text-ink-soft leading-loose">
+            <li>· 任何形式的封建迷信话术</li>
+            <li>· 承诺改运、化解、转运等内容</li>
+            <li>· 吉凶绝对化、个人命运断言</li>
+            <li>· 收费预测、咨询、改名服务</li>
+            <li>· 制造焦虑、恐吓读者的内容</li>
+            <li>· 违背公序良俗的擦边内容</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作初衷 -->
+  <section class="py-24 md:py-32 bg-ink text-rice">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12 reveal">
+        <div class="seal mx-auto mb-8" style="background: transparent; border-color: var(--rice); color: var(--rice);">初衷</div>
+        <h2 class="font-display text-4xl md:text-5xl tracking-widest">创 作 初 衷</h2>
+      </div>
+
+      <div class="prose-classic text-rice/80 reveal" style="color: rgba(245,241,232,0.8);">
+        <p>
+          我们相信，传统文化的真正价值，不在于它能"预测"什么，
+          而在于它帮助我们<strong style="color: var(--gold);">理解过去、安顿当下、面对人生</strong>。
+        </p>
+        <p>
+          一部《易经》教会我们如何看待变化；<br/>
+          一本《论语》启发我们如何与他人相处；<br/>
+          一篇《道德经》指引我们如何与自己对话。
+        </p>
+        <p>
+          这些古老的智慧，并不应该被神秘化、功利化、或者商业化。
+          它们是<strong style="color: var(--gold);">属于每一个普通人的精神资源</strong>，
+          也是中华文明送给世界的一份礼物。
+        </p>
+        <p>
+          愿每一位访客，都能在思源文境找到片刻的宁静与思索。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 免责声明 -->
+  <section class="py-24 md:py-32 bg-paper">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-12 reveal">
+        <div class="seal mx-auto mb-8" style="background: var(--cinnabar);">声明</div>
+        <h2 class="font-display text-4xl md:text-5xl tracking-widest text-ink">免 责 声 明</h2>
+      </div>
+
+      <div class="card-classic frame-corner p-8 md:p-12 bg-rice-soft reveal">
+        <div class="prose-classic">
+          <p class="font-medium text-ink">
+            <strong class="text-cinnabar">重要提示：</strong>
+            请仔细阅读以下声明。继续浏览本站即视为您已知悉并同意以下内容。
+          </p>
+          <ol>
+            <li>本站所有内容为<strong>中华传统国学、玄学民俗、术数文化的科普分享</strong>，旨在传播传统文化知识，不构成任何形式的专业建议。</li>
+            <li>本站内容<strong>不构成任何人生决策、命理预测、风水调整、择日建议、医疗建议、法律建议或财务建议</strong>。</li>
+            <li>本站坚决反对封建迷信，反对以任何形式<strong>承诺改运、化解、转运</strong>，反对吉凶绝对化断言。</li>
+            <li>本站为<strong>公益性质</strong>，不开展任何付费预测、咨询、改名、风水调整等业务，亦不为任何第三方背书。</li>
+            <li>读者基于本站内容所做的任何决定，与本站无关，<strong>请勿迷信</strong>。</li>
+            <li>本站保留对所有内容的最终解释权。</li>
+          </ol>
+          <p class="text-stone text-sm">
+            如您对本站内容有任何疑问或建议，欢迎通过
+            <a href="contact.html">留言页</a> 与我们交流。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系我们 -->
+  <section class="py-24 bg-rice-soft">
+    <div class="max-w-3xl mx-auto px-6 text-center reveal">
+      <h2 class="font-display text-3xl md:text-4xl tracking-widest text-ink mb-6">
+        期 待 与 您 同 行
+      </h2>
+      <p class="text-ink-soft leading-loose mb-10">
+        文化的传承，需要每一位同路人。<br/>
+        如果您认同我们的理念，欢迎留言交流。
+      </p>
+      <a href="contact.html" class="btn-classic btn-cinnabar">
+        <span>留 言 咨 询</span><span>→</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-rice/70 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid md:grid-cols-4 gap-10 mb-16">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="seal seal-sm">思源</span>
+            <div>
+              <p class="font-display text-xl tracking-widest text-rice">思源文境</p>
+              <p class="font-en text-xs tracking-[0.3em] text-gold">SINOVIBE</p>
+            </div>
+          </div>
+          <p class="text-sm leading-loose max-w-md mb-6">
+            传承国学智慧，解析玄学命理。<br/>以理性与敬畏，分享中华传统文化的源远流长。
+          </p>
+          <p class="font-serif-en italic text-gold/70 text-sm">"Stillness is the doorway to wisdom."</p>
+        </div>
+        <div>
+          <h4 class="font-display tracking-widest text-rice mb-6 text-base">页 面</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="index.html" class="hover:text-cinnabar-light transition-colors">首页</a></li>
+            <li><a href="guoxue.html" class="hover:text-cinnabar-light transition-colors">国学文化</a></li>
+            <li><a href="xuanxue.html" class="hover:text-cinnabar-light transition-colors">玄学命理</a></li>
+            <li><a href="articles.html" class="hover:text-cinnabar-light transition-colors">文章专栏</a></li>
+            <li><a href="about.html" class="hover:text-cinnabar-light transition-colors">关于本站</a></li>
+            <li><a href="contact.html" class="hover:text-cinnabar-light transition-colors">留言咨询</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display tracking-widest text-rice mb-6 text-base">联 络</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="text-rice/60">邮箱：contact@sinovibe.cn</li>
+            <li class="text-rice/60">公众号：思源文境</li>
+            <li class="text-rice/60">微博：@思源文境</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-rice/10 pt-8 mb-8">
+        <p class="text-xs leading-relaxed text-rice/50 text-center tracking-wider max-w-3xl mx-auto">
+          ⚠ 免责声明：本站所有内容为传统国学玄学文化科普，仅供传统文化学习交流，
+          不构成任何人生决策、命理决策、风水决策建议，请勿迷信。
+        </p>
+      </div>
+
+      <div class="border-t border-rice/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-rice/40 tracking-wider">
+        <p>© <span data-year>2026</span> 思源文境 · Sinovibe. All rights reserved.</p>
+        <p class="font-en italic">Crafted with reverence for Chinese heritage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

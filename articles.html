@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#faf7f0" />
+
+  <title>文章专栏 · 国学玄学文化科普 | 思源文境</title>
+  <meta name="description" content="思源文境文章专栏：汇集所有国学文化、玄学命理科普文章，支持分类筛选、热度与最新排序，持续更新中。" />
+  <meta name="keywords" content="文章专栏,国学文章,玄学科普,传统文化,命理文章,易经解读" />
+  <meta name="author" content="思源文境" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="文章专栏 · 思源文境" />
+  <meta property="og:description" content="汇集所有国学玄学科普文章。" />
+  <meta property="og:type" content="website" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { DEFAULT: '#1a1714', soft: '#2c2620' },
+            cinnabar: { DEFAULT: '#a93226', light: '#c0392b' },
+            stone: { DEFAULT: '#4a6b7c', deep: '#2c4a5a' },
+            rice: { DEFAULT: '#f5f1e8', soft: '#faf7f0' },
+            paper: '#efe9dc',
+            gold: '#d4a574'
+          },
+          fontFamily: {
+            cn: ['"Noto Serif SC"', '"Songti SC"', 'serif'],
+            display: ['"Ma Shan Zheng"', '"ZCOOL XiaoWei"', '"Noto Serif SC"', 'serif'],
+            en: ['"Cormorant Garamond"', 'Inter', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body class="bg-rice-soft text-ink antialiased">
+
+  <!-- 顶部导航 -->
+  <header class="nav-bar fixed top-0 left-0 right-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <span class="seal seal-sm">思源</span>
+        <span class="hidden sm:flex flex-col leading-tight">
+          <span class="font-display text-xl tracking-widest text-ink">思源文境</span>
+          <span class="font-en text-[10px] tracking-[0.3em] text-stone uppercase">Sinovibe</span>
+        </span>
+      </a>
+      <ul class="hidden lg:flex items-center gap-10 text-sm tracking-[0.2em] text-ink-soft">
+        <li><a href="index.html" data-nav="index.html" class="nav-link">首页</a></li>
+        <li><a href="guoxue.html" data-nav="guoxue.html" class="nav-link">国学文化</a></li>
+        <li><a href="xuanxue.html" data-nav="xuanxue.html" class="nav-link">玄学命理</a></li>
+        <li><a href="articles.html" data-nav="articles.html" class="nav-link active">文章专栏</a></li>
+        <li><a href="about.html" data-nav="about.html" class="nav-link">关于本站</a></li>
+        <li><a href="contact.html" data-nav="contact.html" class="nav-link">留言咨询</a></li>
+      </ul>
+      <button class="menu-btn lg:hidden flex flex-col gap-1.5 p-2" aria-label="打开菜单">
+        <span class="w-6 h-px bg-ink"></span><span class="w-6 h-px bg-ink"></span><span class="w-4 h-px bg-ink"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu lg:hidden">
+    <button class="close-menu absolute top-6 right-6 p-2 text-2xl" aria-label="关闭菜单">×</button>
+    <a href="index.html" data-nav="index.html">首页</a>
+    <a href="guoxue.html" data-nav="guoxue.html">国学文化</a>
+    <a href="xuanxue.html" data-nav="xuanxue.html">玄学命理</a>
+    <a href="articles.html" data-nav="articles.html" class="active">文章专栏</a>
+    <a href="about.html" data-nav="about.html">关于本站</a>
+    <a href="contact.html" data-nav="contact.html">留言咨询</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="relative pt-40 pb-20 bg-deep overflow-hidden">
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 text-rice">
+      <div class="flex items-center gap-3 mb-6 animate-fade-up">
+        <span class="w-12 h-px bg-cinnabar"></span>
+        <span class="font-en text-sm tracking-[0.4em] text-gold uppercase">Articles</span>
+      </div>
+      <h1 class="font-display text-5xl md:text-7xl tracking-widest mb-6 animate-fade-up delay-1">文 章 专 栏</h1>
+      <p class="font-serif-en italic text-xl md:text-2xl text-rice/70 max-w-2xl animate-fade-up delay-2">
+        A curated collection of essays on Chinese tradition.
+      </p>
+    </div>
+  </section>
+
+  <!-- 面包屑 -->
+  <div class="bg-rice-soft border-b border-ink/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 text-sm text-stone tracking-wider">
+      <a href="index.html" class="hover:text-cinnabar transition-colors">首页</a>
+      <span class="mx-2 text-ink/30">/</span>
+      <span class="text-ink">文章专栏</span>
+    </div>
+  </div>
+
+  <!-- 主体：筛选 + 列表 -->
+  <section class="py-16 md:py-20 bg-rice-soft">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+      <!-- 工具栏：分类筛选 + 排序 -->
+      <div class="mb-12 reveal">
+        <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 pb-8 border-b border-ink/10">
+          <!-- 分类筛选 -->
+          <div class="flex flex-wrap items-center gap-2">
+            <span class="text-sm text-stone tracking-[0.2em] mr-3">分 类 ：</span>
+            <button class="tag-pill filter-btn is-active" data-filter="all">全部</button>
+            <button class="tag-pill filter-btn" data-filter="yi">易经</button>
+            <button class="tag-pill filter-btn" data-filter="ru">儒家</button>
+            <button class="tag-pill filter-btn" data-filter="dao">道家</button>
+            <button class="tag-pill filter-btn" data-filter="li">礼法</button>
+            <button class="tag-pill filter-btn" data-filter="kepu">国学科普</button>
+            <button class="tag-pill filter-btn" data-filter="bazi">八字</button>
+            <button class="tag-pill filter-btn" data-filter="wuxing">五行</button>
+            <button class="tag-pill filter-btn" data-filter="fengshui">风水</button>
+          </div>
+
+          <!-- 排序 -->
+          <div class="flex items-center gap-4 text-sm">
+            <span class="text-stone tracking-[0.2em]">排 序 ：</span>
+            <button class="sort-btn is-active text-cinnabar border-b border-cinnabar pb-0.5" data-sort="new">最 新</button>
+            <span class="text-ink/20">/</span>
+            <button class="sort-btn text-ink-soft hover:text-cinnabar transition-colors" data-sort="hot">热 门</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 文章列表（网格） -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" data-article-list>
+
+        <!-- 1 -->
+        <a href="article-detail.html" class="article-card card-classic block reveal is-visible" data-category="yi" data-date="2026-06-18" data-views="2856">
+          <article class="frame-corner bg-rice p-8 h-full flex flex-col">
+            <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-5">
+              <span class="text-cinnabar">易经</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>2026.06.18</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>12 min</span>
+            </div>
+            <h3 class="font-display text-2xl tracking-wider text-ink mb-4 leading-relaxed hover:text-cinnabar transition-colors">
+              《易经》六十四卦的哲学骨架与文化映射
+            </h3>
+            <p class="text-ink-soft text-sm leading-loose mb-6 flex-1 line-clamp-3">
+              易经以阴阳为基，以六爻为形，构建出一套完备的宇宙认知模型。本文尝试从哲学与文化的角度，重新审视这一中华文明瑰宝。
+            </p>
+            <div class="flex items-center justify-between text-xs pt-4 border-t border-ink/5">
+              <span class="text-stone tracking-wider">阅读 2856</span>
+              <span class="text-cinnabar tracking-[0.2em]">阅 读 →</span>
+            </div>
+          </article>
+        </a>
+
+        <!-- 2 -->
+        <a href="article-detail.html" class="article-card card-classic block reveal is-visible" data-category="dao" data-date="2026-06-12" data-views="2340" style="transition-delay: 0.05s;">
+          <article class="frame-corner bg-rice p-8 h-full flex flex-col">
+            <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-5">
+              <span class="text-cinnabar">道家</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>2026.06.12</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>9 min</span>
+            </div>
+            <h3 class="font-display text-2xl tracking-wider text-ink mb-4 leading-relaxed hover:text-cinnabar transition-colors">
+              道法自然：老庄哲学中的生活智慧
+            </h3>
+            <p class="text-ink-soft text-sm leading-loose mb-6 flex-1 line-clamp-3">
+              "人法地，地法天，天法道，道法自然"。道家思想中的"无为"，并非消极，而是一种顺势而为的从容。
+            </p>
+            <div class="flex items-center justify-between text-xs pt-4 border-t border-ink/5">
+              <span class="text-stone tracking-wider">阅读 2340</span>
+              <span class="text-cinnabar tracking-[0.2em]">阅 读 →</span>
+            </div>
+          </article>
+        </a>
+
+        <!-- 3 -->
+        <a href="article-detail.html" class="article-card card-classic block reveal is-visible" data-category="wuxing" data-date="2026-06-05" data-views="1987" style="transition-delay: 0.1s;">
+          <article class="frame-corner bg-rice p-8 h-full flex flex-col">
+            <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-5">
+              <span class="text-cinnabar">五行</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>2026.06.05</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>7 min</span>
+            </div>
+            <h3 class="font-display text-2xl tracking-wider text-ink mb-4 leading-relaxed hover:text-cinnabar transition-colors">
+              五行相生相克：传统思维中的平衡观
+            </h3>
+            <p class="text-ink-soft text-sm leading-loose mb-6 flex-1 line-clamp-3">
+              木火土金水，并非神秘符号，而是古人对万物关系的朴素归纳。它体现了中华民族追求平衡与和谐的整体世界观。
+            </p>
+            <div class="flex items-center justify-between text-xs pt-4 border-t border-ink/5">
+              <span class="text-stone tracking-wider">阅读 1987</span>
+              <span class="text-cinnabar tracking-[0.2em]">阅 读 →</span>
+            </div>
+          </article>
+        </a>
+
+        <!-- 4 -->
+        <a href="article-detail.html" class="article-card card-classic block reveal is-visible" data-category="ru" data-date="2026-05-28" data-views="3120">
+          <article class="frame-corner bg-rice p-8 h-full flex flex-col">
+            <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-5">
+              <span class="text-cinnabar">儒家</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>2026.05.28</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>10 min</span>
+            </div>
+            <h3 class="font-display text-2xl tracking-wider text-ink mb-4 leading-relaxed hover:text-cinnabar transition-colors">
+              仁者爱人：《论语》中的处世之道
+            </h3>
+            <p class="text-ink-soft text-sm leading-loose mb-6 flex-1 line-clamp-3">
+              孔子所言之"仁"，是儒家思想的核心。从日常生活出发，重新理解"克己复礼"的现代意义。
+            </p>
+            <div class="flex items-center justify-between text-xs pt-4 border-t border-ink/5">
+              <span class="text-stone tracking-wider">阅读 3120</span>
+              <span class="text-cinnabar tracking-[0.2em]">阅 读 →</span>
+            </div>
+          </article>
+        </a>
+
+        <!-- 5 -->
+        <a href="article-detail.html" class="article-card card-classic block reveal is-visible" data-category="bazi" data-date="2026-05-20" data-views="1672" style="transition-delay: 0.05s;">
+          <article class="frame-corner bg-rice p-8 h-full flex flex-col">
+            <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-5">
+              <span class="text-cinnabar">八字</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>2026.05.20</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>8 min</span>
+            </div>
+            <h3 class="font-display text-2xl tracking-wider text-ink mb-4 leading-relaxed hover:text-cinnabar transition-colors">
+              八字四柱：传统历法与文化密码
+            </h3>
+            <p class="text-ink-soft text-sm leading-loose mb-6 flex-1 line-clamp-3">
+              年月日时所对应的四柱八字，本质上是一套精密的古代时间记录体系。本文从历法角度解读其文化意义。
+            </p>
+            <div class="flex items-center justify-between text-xs pt-4 border-t border-ink/5">
+              <span class="text-stone tracking-wider">阅读 1672</span>
+              <span class="text-cinnabar tracking-[0.2em]">阅 读 →</span>
+            </div>
+          </article>
+        </a>
+
+        <!-- 6 -->
+        <a href="article-detail.html" class="article-card card-classic block reveal is-visible" data-category="li" data-date="2026-05-15" data-views="1438" style="transition-delay: 0.1s;">
+          <article class="frame-corner bg-rice p-8 h-full flex flex-col">
+            <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-5">
+              <span class="text-cinnabar">礼法</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>2026.05.15</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>6 min</span>
+            </div>
+            <h3 class="font-display text-2xl tracking-wider text-ink mb-4 leading-relaxed hover:text-cinnabar transition-colors">
+              节庆民俗：传统节日中的文化记忆
+            </h3>
+            <p class="text-ink-soft text-sm leading-loose mb-6 flex-1 line-clamp-3">
+              春节、清明、端午、中秋……每一个传统节日都承载着中华民族深厚的文化记忆与人文精神。
+            </p>
+            <div class="flex items-center justify-between text-xs pt-4 border-t border-ink/5">
+              <span class="text-stone tracking-wider">阅读 1438</span>
+              <span class="text-cinnabar tracking-[0.2em]">阅 读 →</span>
+            </div>
+          </article>
+        </a>
+
+        <!-- 7 -->
+        <a href="article-detail.html" class="article-card card-classic block reveal is-visible" data-category="fengshui" data-date="2026-05-08" data-views="1893">
+          <article class="frame-corner bg-rice p-8 h-full flex flex-col">
+            <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-5">
+              <span class="text-cinnabar">风水</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>2026.05.08</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>9 min</span>
+            </div>
+            <h3 class="font-display text-2xl tracking-wider text-ink mb-4 leading-relaxed hover:text-cinnabar transition-colors">
+              居住环境学：传统"风水"中的科学与人文
+            </h3>
+            <p class="text-ink-soft text-sm leading-loose mb-6 flex-1 line-clamp-3">
+              "风水"古称"堪舆"，是研究人居环境的传统学问。本文去伪存真，理性分析其文化与生活价值。
+            </p>
+            <div class="flex items-center justify-between text-xs pt-4 border-t border-ink/5">
+              <span class="text-stone tracking-wider">阅读 1893</span>
+              <span class="text-cinnabar tracking-[0.2em]">阅 读 →</span>
+            </div>
+          </article>
+        </a>
+
+        <!-- 8 -->
+        <a href="article-detail.html" class="article-card card-classic block reveal is-visible" data-category="kepu" data-date="2026-04-30" data-views="2256" style="transition-delay: 0.05s;">
+          <article class="frame-corner bg-rice p-8 h-full flex flex-col">
+            <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-5">
+              <span class="text-cinnabar">科普</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>2026.04.30</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>11 min</span>
+            </div>
+            <h3 class="font-display text-2xl tracking-wider text-ink mb-4 leading-relaxed hover:text-cinnabar transition-colors">
+              干支起源：十天干十二地支的由来
+            </h3>
+            <p class="text-ink-soft text-sm leading-loose mb-6 flex-1 line-clamp-3">
+              干支是中华文明的"数字符号"，广泛应用于历法、纪年、术数等领域。了解它的起源，便理解了一半的传统文化。
+            </p>
+            <div class="flex items-center justify-between text-xs pt-4 border-t border-ink/5">
+              <span class="text-stone tracking-wider">阅读 2256</span>
+              <span class="text-cinnabar tracking-[0.2em]">阅 读 →</span>
+            </div>
+          </article>
+        </a>
+
+        <!-- 9 -->
+        <a href="article-detail.html" class="article-card card-classic block reveal is-visible" data-category="yi" data-date="2026-04-22" data-views="1567" style="transition-delay: 0.1s;">
+          <article class="frame-corner bg-rice p-8 h-full flex flex-col">
+            <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-5">
+              <span class="text-cinnabar">易经</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>2026.04.22</span>
+              <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+              <span>10 min</span>
+            </div>
+            <h3 class="font-display text-2xl tracking-wider text-ink mb-4 leading-relaxed hover:text-cinnabar transition-colors">
+              阴阳之道：中华辩证思维的本源
+            </h3>
+            <p class="text-ink-soft text-sm leading-loose mb-6 flex-1 line-clamp-3">
+              阴阳不是对立，而是相互依存、相互转化的统一体。它是中华辩证思维的核心，影响中医、哲学、艺术数千年。
+            </p>
+            <div class="flex items-center justify-between text-xs pt-4 border-t border-ink/5">
+              <span class="text-stone tracking-wider">阅读 1567</span>
+              <span class="text-cinnabar tracking-[0.2em]">阅 读 →</span>
+            </div>
+          </article>
+        </a>
+
+      </div>
+
+      <!-- 分页 -->
+      <div class="flex items-center justify-center gap-2 mt-20 reveal">
+        <button class="page-btn is-disabled w-10 h-10 flex items-center justify-center border border-ink/10 text-ink/30 cursor-not-allowed" disabled>‹</button>
+        <button class="page-btn is-active w-10 h-10 flex items-center justify-center bg-ink text-rice">1</button>
+        <button class="page-btn w-10 h-10 flex items-center justify-center border border-ink/10 text-ink-soft hover:border-cinnabar hover:text-cinnabar transition-colors">2</button>
+        <button class="page-btn w-10 h-10 flex items-center justify-center border border-ink/10 text-ink-soft hover:border-cinnabar hover:text-cinnabar transition-colors">3</button>
+        <span class="text-stone px-2">···</span>
+        <button class="page-btn w-10 h-10 flex items-center justify-center border border-ink/10 text-ink-soft hover:border-cinnabar hover:text-cinnabar transition-colors">8</button>
+        <button class="page-btn w-10 h-10 flex items-center justify-center border border-ink/10 text-ink-soft hover:border-cinnabar hover:text-cinnabar transition-colors">›</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-rice/70 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid md:grid-cols-4 gap-10 mb-16">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="seal seal-sm">思源</span>
+            <div>
+              <p class="font-display text-xl tracking-widest text-rice">思源文境</p>
+              <p class="font-en text-xs tracking-[0.3em] text-gold">SINOVIBE</p>
+            </div>
+          </div>
+          <p class="text-sm leading-loose max-w-md mb-6">
+            传承国学智慧，解析玄学命理。<br/>以理性与敬畏，分享中华传统文化的源远流长。
+          </p>
+          <p class="font-serif-en italic text-gold/70 text-sm">"Stillness is the doorway to wisdom."</p>
+        </div>
+        <div>
+          <h4 class="font-display tracking-widest text-rice mb-6 text-base">页 面</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="index.html" class="hover:text-cinnabar-light transition-colors">首页</a></li>
+            <li><a href="guoxue.html" class="hover:text-cinnabar-light transition-colors">国学文化</a></li>
+            <li><a href="xuanxue.html" class="hover:text-cinnabar-light transition-colors">玄学命理</a></li>
+            <li><a href="articles.html" class="hover:text-cinnabar-light transition-colors">文章专栏</a></li>
+            <li><a href="about.html" class="hover:text-cinnabar-light transition-colors">关于本站</a></li>
+            <li><a href="contact.html" class="hover:text-cinnabar-light transition-colors">留言咨询</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display tracking-widest text-rice mb-6 text-base">联 络</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="text-rice/60">邮箱：contact@sinovibe.cn</li>
+            <li class="text-rice/60">公众号：思源文境</li>
+            <li class="text-rice/60">微博：@思源文境</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-rice/10 pt-8 mb-8">
+        <p class="text-xs leading-relaxed text-rice/50 text-center tracking-wider max-w-3xl mx-auto">
+          ⚠ 免责声明：本站所有内容为传统国学玄学文化科普，仅供传统文化学习交流，
+          不构成任何人生决策、命理决策、风水决策建议，请勿迷信。
+        </p>
+      </div>
+
+      <div class="border-t border-rice/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-rice/40 tracking-wider">
+        <p>© <span data-year>2026</span> 思源文境 · Sinovibe. All rights reserved.</p>
+        <p class="font-en italic">Crafted with reverence for Chinese heritage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

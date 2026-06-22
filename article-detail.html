@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#faf7f0" />
+
+  <title>《易经》六十四卦的哲学骨架与文化映射 | 思源文境</title>
+  <meta name="description" content="易经以阴阳为基，以六爻为形，构建出一套完备的宇宙认知模型。本文从哲学与文化角度，重新审视这一中华文明瑰宝。" />
+  <meta name="keywords" content="易经,六十四卦,阴阳,国学,传统文化,哲学" />
+  <meta name="author" content="思源文境" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="《易经》六十四卦的哲学骨架与文化映射" />
+  <meta property="og:description" content="从哲学与文化角度，重新审视易经六十四卦。" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2026-06-18" />
+  <meta property="article:author" content="思源文境" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { DEFAULT: '#1a1714', soft: '#2c2620' },
+            cinnabar: { DEFAULT: '#a93226', light: '#c0392b' },
+            stone: { DEFAULT: '#4a6b7c', deep: '#2c4a5a' },
+            rice: { DEFAULT: '#f5f1e8', soft: '#faf7f0' },
+            paper: '#efe9dc',
+            gold: '#d4a574'
+          },
+          fontFamily: {
+            cn: ['"Noto Serif SC"', '"Songti SC"', 'serif'],
+            display: ['"Ma Shan Zheng"', '"ZCOOL XiaoWei"', '"Noto Serif SC"', 'serif'],
+            en: ['"Cormorant Garamond"', 'Inter', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body class="bg-rice-soft text-ink antialiased">
+
+  <!-- 顶部导航 -->
+  <header class="nav-bar fixed top-0 left-0 right-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <span class="seal seal-sm">思源</span>
+        <span class="hidden sm:flex flex-col leading-tight">
+          <span class="font-display text-xl tracking-widest text-ink">思源文境</span>
+          <span class="font-en text-[10px] tracking-[0.3em] text-stone uppercase">Sinovibe</span>
+        </span>
+      </a>
+      <ul class="hidden lg:flex items-center gap-10 text-sm tracking-[0.2em] text-ink-soft">
+        <li><a href="index.html" data-nav="index.html" class="nav-link">首页</a></li>
+        <li><a href="guoxue.html" data-nav="guoxue.html" class="nav-link">国学文化</a></li>
+        <li><a href="xuanxue.html" data-nav="xuanxue.html" class="nav-link">玄学命理</a></li>
+        <li><a href="articles.html" data-nav="articles.html" class="nav-link active">文章专栏</a></li>
+        <li><a href="about.html" data-nav="about.html" class="nav-link">关于本站</a></li>
+        <li><a href="contact.html" data-nav="contact.html" class="nav-link">留言咨询</a></li>
+      </ul>
+      <button class="menu-btn lg:hidden flex flex-col gap-1.5 p-2" aria-label="打开菜单">
+        <span class="w-6 h-px bg-ink"></span><span class="w-6 h-px bg-ink"></span><span class="w-4 h-px bg-ink"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu lg:hidden">
+    <button class="close-menu absolute top-6 right-6 p-2 text-2xl" aria-label="关闭菜单">×</button>
+    <a href="index.html" data-nav="index.html">首页</a>
+    <a href="guoxue.html" data-nav="guoxue.html">国学文化</a>
+    <a href="xuanxue.html" data-nav="xuanxue.html">玄学命理</a>
+    <a href="articles.html" data-nav="articles.html" class="active">文章专栏</a>
+    <a href="about.html" data-nav="about.html">关于本站</a>
+    <a href="contact.html" data-nav="contact.html">留言咨询</a>
+  </div>
+
+  <!-- 面包屑 -->
+  <div class="pt-28 bg-rice-soft border-b border-ink/5">
+    <div class="max-w-4xl mx-auto px-6 py-4 text-sm text-stone tracking-wider">
+      <a href="index.html" class="hover:text-cinnabar transition-colors">首页</a>
+      <span class="mx-2 text-ink/30">/</span>
+      <a href="guoxue.html" class="hover:text-cinnabar transition-colors">国学文化</a>
+      <span class="mx-2 text-ink/30">/</span>
+      <a href="articles.html?cat=yi" class="hover:text-cinnabar transition-colors">易经</a>
+      <span class="mx-2 text-ink/30">/</span>
+      <span class="text-ink line-clamp-1 inline-block max-w-[40%] align-bottom">六十四卦的哲学骨架与文化映射</span>
+    </div>
+  </div>
+
+  <!-- 文章主体 -->
+  <article class="py-16 md:py-24 bg-rice-soft">
+    <div class="max-w-4xl mx-auto px-6">
+
+      <!-- 文章头 -->
+      <header class="mb-12 reveal">
+        <div class="flex items-center gap-3 text-xs text-stone tracking-[0.2em] mb-6">
+          <span class="text-cinnabar">易经智慧</span>
+          <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+          <span>2026 · 06 · 18</span>
+          <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+          <span>阅读约 12 分钟</span>
+          <span class="w-1 h-1 rounded-full bg-ink/20"></span>
+          <span>阅读 2856</span>
+        </div>
+        <h1 class="font-display text-4xl md:text-5xl lg:text-6xl leading-tight tracking-wider text-ink mb-8">
+          《易经》六十四卦的<br/>
+          哲学骨架与文化映射
+        </h1>
+        <p class="text-lg md:text-xl text-ink-soft leading-loose font-serif-cn border-l-2 border-cinnabar pl-6">
+          易经以阴阳为基，以六爻为形，构建出一套完备的宇宙认知模型。本文从哲学与文化角度，重新审视这一中华文明瑰宝。
+        </p>
+        <div class="mt-8 flex items-center gap-3 text-sm text-stone">
+          <span class="seal seal-sm" style="width:36px;height:36px;font-size:0.7rem;">思源</span>
+          <div>
+            <p class="text-ink">思源文境 · 撰</p>
+            <p class="text-xs text-stone">传统文化研究员</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- 装饰分隔 -->
+      <div class="divider-cloud mb-12"><span class="divider-ornament"></span></div>
+
+      <!-- 正文 -->
+      <div class="prose-classic drop-cap">
+        <p>
+          《易经》被尊为"群经之首"，是中国传统文化的源头之一。它并非简单的占卜之书，
+          而是一套以阴阳为基础、以六十四卦为结构的<strong>宇宙认知模型</strong>。
+          数千年来，它深深影响了中华民族的思维方式、哲学观念乃至生活美学。
+        </p>
+
+        <h2>一、阴阳：最基本的二元结构</h2>
+        <p>
+          整部《易经》的起点，是两个最简单的符号：阳爻（—）与阴爻（--）。
+          它们并非简单的"好"与"坏"，而是一种描述事物<strong>相互依存、相互转化</strong>的辩证符号。
+        </p>
+        <p>
+          《系辞》说："一阴一阳之谓道"。在古人眼中，世界并非由孤立的事物构成，
+          而是由对立又统一的双方共同组成。这种"二元一体"的思想，贯穿于中医、哲学、艺术乃至日常生活的方方面面。
+        </p>
+
+        <blockquote>
+          阴阳者，天地之道也，万物之纲纪，变化之父母，生杀之本始，神明之府也。
+        </blockquote>
+
+        <h2>二、爻与卦：动态变化的模型</h2>
+        <p>
+          三个爻叠在一起，形成<strong>八卦</strong>（乾、坤、震、巽、坎、离、艮、兑），
+          分别代表天、地、雷、风、水、火、山、泽这八种自然现象。
+          两个八卦组合，则形成<strong>六十四卦</strong>，构成了一个描述世界变化的精密模型。
+        </p>
+        <p>
+          每一卦中的六个爻，从下到上代表事物发展的六个阶段。这种结构暗含着古人朴素的<strong>过程论思想</strong>——
+          任何事物都处在不断变化之中，没有永恒的"吉"或"凶"，唯有"时"与"位"的不同。
+        </p>
+
+        <h3>2.1 变爻与"时"</h3>
+        <p>
+          《易经》的智慧很大程度上体现在"时"的观念上。同样一个阳爻，
+          处于初位、上位、当位、不当位，其象征意义都截然不同。这启示我们：<strong>判断事物，不能脱离具体情境</strong>。
+        </p>
+
+        <h3>2.2 "中"的智慧</h3>
+        <p>
+          六十四卦中，二、五爻被视为"得中"，象征着<strong>中庸、平衡</strong>的状态。
+          这与儒家"中庸"思想一脉相承，反映了中华民族追求和谐、不偏不倚的审美与价值观。
+        </p>
+
+        <h2>三、象、数、理：易学的三重维度</h2>
+        <p>
+          后世将《易经》的发展归纳为"象"、"数"、"理"三个层面：
+        </p>
+        <ul>
+          <li><strong>象</strong>：卦象、爻象，是易学最直观的符号系统；</li>
+          <li><strong>数</strong>：河图、洛书、天地之数，是易学的数理基础；</li>
+          <li><strong>理</strong>：义理、哲理，是易学的思想升华。</li>
+        </ul>
+        <p>
+          三者并非割裂，而是相互贯通。理解《易经》，既不能停留在"占算"层面，
+          也不能完全剥离其象数结构——它是中华文化中独特的<strong>整体思维工具</strong>。
+        </p>
+
+        <h2>四、文化的映射：易经如何塑造了我们</h2>
+        <p>
+          《易经》的影响远超《易经》本身。在中国文化的诸多领域，都能找到它的痕迹：
+        </p>
+        <ul>
+          <li><strong>中医</strong>：阴阳平衡、五行生克直接来源于易学思想；</li>
+          <li><strong>建筑</strong>：传统建筑的方位、朝向、布局多有易学考量；</li>
+          <li><strong>文学</strong>：卦爻辞的简洁、含蓄成为古典文学的审美典范；</li>
+          <li><strong>艺术</strong>：书法、绘画中虚实相生的美学原则，与易学相契；</li>
+          <li><strong>政治</strong>："变通"、"时中"成为传统治理智慧的关键词。</li>
+        </ul>
+
+        <h2>五、理性看待：易经不是命运预言书</h2>
+        <p>
+          我们必须强调：<strong>《易经》并非预言吉凶的工具</strong>。
+          它所揭示的，是一种看待变化、应对变化的态度。今天我们学习《易经》，
+          应当取其<strong>哲学智慧与文化内涵</strong>，去除其中被后人附会、扭曲的迷信成分。
+        </p>
+        <p>
+          真正读懂《易经》的人，会发现它是一面镜子——照见的不是未来的吉凶，
+          而是我们看待世界的方式，以及面对变化时内心的从容。
+        </p>
+
+        <h2>结语</h2>
+        <p>
+          《易经》六十四卦，是中华民族留给世界的一份独特文化遗产。
+          它不提供标准答案，却提供一种<strong>思考的方法</strong>；不预言未来，
+          却教会我们如何面对未来。
+        </p>
+        <p>
+          在这个日新月异的时代，重读《易经》，或许能让我们在纷繁的变化中，
+          找到一份属于自己的宁静与智慧。
+        </p>
+      </div>
+
+      <!-- 标签 -->
+      <div class="mt-16 pt-8 border-t border-ink/10 flex flex-wrap items-center gap-2">
+        <span class="text-sm text-stone mr-2">标 签 ：</span>
+        <span class="tag-pill">易经</span>
+        <span class="tag-pill">六十四卦</span>
+        <span class="tag-pill">阴阳</span>
+        <span class="tag-pill">哲学</span>
+        <span class="tag-pill">国学经典</span>
+      </div>
+
+      <!-- 文章分享 / 上下篇 -->
+      <div class="mt-12 grid md:grid-cols-2 gap-6">
+        <a href="article-detail.html" class="card-classic frame-corner p-6 bg-rice group">
+          <p class="text-xs text-stone tracking-[0.2em] mb-2">← 上一篇</p>
+          <p class="font-display text-lg text-ink-soft group-hover:text-cinnabar transition-colors">阴阳之道：中华辩证思维的本源</p>
+        </a>
+        <a href="article-detail.html" class="card-classic frame-corner p-6 bg-rice group text-right">
+          <p class="text-xs text-stone tracking-[0.2em] mb-2">下一篇 →</p>
+          <p class="font-display text-lg text-ink-soft group-hover:text-cinnabar transition-colors">道法自然：老庄哲学中的生活智慧</p>
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <!-- 相关文章 -->
+  <section class="py-20 bg-paper">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="flex items-end justify-between mb-12 reveal">
+        <div>
+          <p class="font-en text-sm tracking-[0.4em] text-cinnabar uppercase mb-3">Related</p>
+          <h2 class="font-display text-3xl md:text-4xl tracking-widest text-ink">相 关 阅 读</h2>
+        </div>
+        <a href="articles.html" class="text-sm text-stone hover:text-cinnabar transition-colors tracking-[0.2em] border-b border-ink/10 pb-1">更多 →</a>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <a href="article-detail.html" class="card-classic frame-corner p-6 bg-rice-soft group reveal">
+          <p class="text-xs text-cinnabar tracking-[0.2em] mb-3">道家</p>
+          <h3 class="font-display text-xl text-ink mb-3 group-hover:text-cinnabar transition-colors">道法自然：老庄哲学中的生活智慧</h3>
+          <p class="text-sm text-ink-soft leading-loose line-clamp-2">"人法地，地法天，天法道，道法自然"…</p>
+        </a>
+        <a href="article-detail.html" class="card-classic frame-corner p-6 bg-rice-soft group reveal" style="transition-delay: 0.1s;">
+          <p class="text-xs text-cinnabar tracking-[0.2em] mb-3">五行</p>
+          <h3 class="font-display text-xl text-ink mb-3 group-hover:text-cinnabar transition-colors">五行相生相克：传统思维中的平衡观</h3>
+          <p class="text-sm text-ink-soft leading-loose line-clamp-2">木火土金水，并非神秘符号…</p>
+        </a>
+        <a href="article-detail.html" class="card-classic frame-corner p-6 bg-rice-soft group reveal" style="transition-delay: 0.2s;">
+          <p class="text-xs text-cinnabar tracking-[0.2em] mb-3">儒家</p>
+          <h3 class="font-display text-xl text-ink mb-3 group-hover:text-cinnabar transition-colors">仁者爱人：《论语》中的处世之道</h3>
+          <p class="text-sm text-ink-soft leading-loose line-clamp-2">孔子所言之"仁"，是儒家思想的核心…</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-rice/70 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid md:grid-cols-4 gap-10 mb-16">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="seal seal-sm">思源</span>
+            <div>
+              <p class="font-display text-xl tracking-widest text-rice">思源文境</p>
+              <p class="font-en text-xs tracking-[0.3em] text-gold">SINOVIBE</p>
+            </div>
+          </div>
+          <p class="text-sm leading-loose max-w-md mb-6">
+            传承国学智慧，解析玄学命理。<br/>以理性与敬畏，分享中华传统文化的源远流长。
+          </p>
+          <p class="font-serif-en italic text-gold/70 text-sm">"Stillness is the doorway to wisdom."</p>
+        </div>
+        <div>
+          <h4 class="font-display tracking-widest text-rice mb-6 text-base">页 面</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="index.html" class="hover:text-cinnabar-light transition-colors">首页</a></li>
+            <li><a href="guoxue.html" class="hover:text-cinnabar-light transition-colors">国学文化</a></li>
+            <li><a href="xuanxue.html" class="hover:text-cinnabar-light transition-colors">玄学命理</a></li>
+            <li><a href="articles.html" class="hover:text-cinnabar-light transition-colors">文章专栏</a></li>
+            <li><a href="about.html" class="hover:text-cinnabar-light transition-colors">关于本站</a></li>
+            <li><a href="contact.html" class="hover:text-cinnabar-light transition-colors">留言咨询</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display tracking-widest text-rice mb-6 text-base">联 络</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="text-rice/60">邮箱：contact@sinovibe.cn</li>
+            <li class="text-rice/60">公众号：思源文境</li>
+            <li class="text-rice/60">微博：@思源文境</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-rice/10 pt-8 mb-8">
+        <p class="text-xs leading-relaxed text-rice/50 text-center tracking-wider max-w-3xl mx-auto">
+          ⚠ 免责声明：本站所有内容为传统国学玄学文化科普，仅供传统文化学习交流，
+          不构成任何人生决策、命理决策、风水决策建议，请勿迷信。
+        </p>
+      </div>
+
+      <div class="border-t border-rice/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-rice/40 tracking-wider">
+        <p>© <span data-year>2026</span> 思源文境 · Sinovibe. All rights reserved.</p>
+        <p class="font-en italic">Crafted with reverence for Chinese heritage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="theme-color" content="#faf7f0" />
+
+  <title>留言咨询 · 思源文境</title>
+  <meta name="description" content="思源文境留言咨询页面。欢迎读者交流传统文化心得、提出内容建议与意见。" />
+  <meta name="keywords" content="留言咨询,思源文境,文化交流,内容建议" />
+  <meta name="author" content="思源文境" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="留言咨询 · 思源文境" />
+  <meta property="og:description" content="读者交流与内容建议" />
+  <meta property="og:type" content="website" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: { DEFAULT: '#1a1714', soft: '#2c2620' },
+            cinnabar: { DEFAULT: '#a93226', light: '#c0392b' },
+            stone: { DEFAULT: '#4a6b7c', deep: '#2c4a5a' },
+            rice: { DEFAULT: '#f5f1e8', soft: '#faf7f0' },
+            paper: '#efe9dc',
+            gold: '#d4a574'
+          },
+          fontFamily: {
+            cn: ['"Noto Serif SC"', '"Songti SC"', 'serif'],
+            display: ['"Ma Shan Zheng"', '"ZCOOL XiaoWei"', '"Noto Serif SC"', 'serif'],
+            en: ['"Cormorant Garamond"', 'Inter', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+
+<body class="bg-rice-soft text-ink antialiased">
+
+  <!-- 顶部导航 -->
+  <header class="nav-bar fixed top-0 left-0 right-0 z-50">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-10 h-20 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <span class="seal seal-sm">思源</span>
+        <span class="hidden sm:flex flex-col leading-tight">
+          <span class="font-display text-xl tracking-widest text-ink">思源文境</span>
+          <span class="font-en text-[10px] tracking-[0.3em] text-stone uppercase">Sinovibe</span>
+        </span>
+      </a>
+      <ul class="hidden lg:flex items-center gap-10 text-sm tracking-[0.2em] text-ink-soft">
+        <li><a href="index.html" data-nav="index.html" class="nav-link">首页</a></li>
+        <li><a href="guoxue.html" data-nav="guoxue.html" class="nav-link">国学文化</a></li>
+        <li><a href="xuanxue.html" data-nav="xuanxue.html" class="nav-link">玄学命理</a></li>
+        <li><a href="articles.html" data-nav="articles.html" class="nav-link">文章专栏</a></li>
+        <li><a href="about.html" data-nav="about.html" class="nav-link">关于本站</a></li>
+        <li><a href="contact.html" data-nav="contact.html" class="nav-link active">留言咨询</a></li>
+      </ul>
+      <button class="menu-btn lg:hidden flex flex-col gap-1.5 p-2" aria-label="打开菜单">
+        <span class="w-6 h-px bg-ink"></span><span class="w-6 h-px bg-ink"></span><span class="w-4 h-px bg-ink"></span>
+      </button>
+    </nav>
+  </header>
+
+  <div class="mobile-menu lg:hidden">
+    <button class="close-menu absolute top-6 right-6 p-2 text-2xl" aria-label="关闭菜单">×</button>
+    <a href="index.html" data-nav="index.html">首页</a>
+    <a href="guoxue.html" data-nav="guoxue.html">国学文化</a>
+    <a href="xuanxue.html" data-nav="xuanxue.html">玄学命理</a>
+    <a href="articles.html" data-nav="articles.html">文章专栏</a>
+    <a href="about.html" data-nav="about.html">关于本站</a>
+    <a href="contact.html" data-nav="contact.html" class="active">留言咨询</a>
+  </div>
+
+  <!-- Hero（小型） -->
+  <section class="relative pt-40 pb-20 bg-deep overflow-hidden">
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10 text-rice">
+      <div class="flex items-center gap-3 mb-6 animate-fade-up">
+        <span class="w-12 h-px bg-cinnabar"></span>
+        <span class="font-en text-sm tracking-[0.4em] text-gold uppercase">Get in Touch</span>
+      </div>
+      <h1 class="font-display text-5xl md:text-7xl tracking-widest mb-6 animate-fade-up delay-1">留 言 咨 询</h1>
+      <p class="font-serif-en italic text-xl md:text-2xl text-rice/70 max-w-2xl animate-fade-up delay-2">
+        We listen, we reflect, we respond.
+      </p>
+    </div>
+  </section>
+
+  <!-- 面包屑 -->
+  <div class="bg-rice-soft border-b border-ink/5">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 text-sm text-stone tracking-wider">
+      <a href="index.html" class="hover:text-cinnabar transition-colors">首页</a>
+      <span class="mx-2 text-ink/30">/</span>
+      <span class="text-ink">留言咨询</span>
+    </div>
+  </div>
+
+  <!-- 主体：双栏（左说明 + 右表单） -->
+  <section class="py-20 md:py-28 bg-rice-soft">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-16">
+
+        <!-- 左：说明区 -->
+        <div class="lg:col-span-5 reveal">
+          <p class="font-en text-sm tracking-[0.4em] text-cinnabar uppercase mb-3">Reach Out</p>
+          <h2 class="font-display text-4xl md:text-5xl tracking-widest text-ink mb-8 leading-tight">
+            期待您的<br/>真 知 灼 见
+          </h2>
+          <p class="text-ink-soft leading-loose mb-8">
+            我们欢迎所有对传统文化感兴趣的访客留言：<br/>
+            内容建议、文化交流、勘误指正、合作意向，<br/>
+            或仅仅是您的一番读后感。
+          </p>
+
+          <!-- 留言须知 -->
+          <div class="card-classic frame-corner p-6 bg-rice mb-6">
+            <h3 class="font-display text-xl text-ink tracking-widest mb-4 flex items-center gap-2">
+              <span class="seal seal-sm" style="width:32px;height:32px;font-size:0.6rem;">须知</span>
+              留 言 须 知
+            </h3>
+            <ul class="text-sm text-ink-soft space-y-2 leading-loose">
+              <li>· 留言将于<strong>3 个工作日内</strong>查阅并回复；</li>
+              <li>本站<strong>不提供</strong>命理、风水、择日等预测服务；</li>
+              <li>请勿在留言中泄露个人敏感信息；</li>
+              <li>留言内容将可能被精选匿名展示。</li>
+            </ul>
+          </div>
+
+          <!-- 联系方式 -->
+          <div class="space-y-4 text-sm text-ink-soft">
+            <p class="flex items-start gap-3">
+              <span class="text-cinnabar">✉</span>
+              <span>邮箱：contact@sinovibe.cn</span>
+            </p>
+            <p class="flex items-start gap-3">
+              <span class="text-cinnabar">⌬</span>
+              <span>微信公众号：思源文境</span>
+            </p>
+            <p class="flex items-start gap-3">
+              <span class="text-cinnabar">※</span>
+              <span>微博：@思源文境</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- 右：表单 -->
+        <div class="lg:col-span-7 reveal" style="transition-delay: 0.15s;">
+          <form id="contact-form" class="card-classic frame-corner bg-rice p-8 md:p-12" novalidate>
+            <div class="space-y-8">
+
+              <!-- 姓名 -->
+              <div>
+                <label for="name" class="block text-xs text-stone tracking-[0.3em] mb-3">
+                  姓 名 <span class="text-cinnabar">*</span>
+                </label>
+                <input type="text" id="name" name="name" required class="input-classic" placeholder="如何称呼您" />
+              </div>
+
+              <!-- 邮箱 -->
+              <div>
+                <label for="email" class="block text-xs text-stone tracking-[0.3em] mb-3">
+                  邮 箱
+                </label>
+                <input type="email" id="email" name="email" class="input-classic" placeholder="您的联系邮箱（选填）" />
+              </div>
+
+              <!-- 主题 -->
+              <div>
+                <label for="subject" class="block text-xs text-stone tracking-[0.3em] mb-3">
+                  主 题
+                </label>
+                <div class="relative">
+                  <select id="subject" name="subject" class="input-classic appearance-none cursor-pointer">
+                    <option value="content">内容建议</option>
+                    <option value="culture">文化交流</option>
+                    <option value="correction">勘误指正</option>
+                    <option value="cooperation">合作意向</option>
+                    <option value="other">其他</option>
+                  </select>
+                  <span class="absolute right-2 top-1/2 -translate-y-1/2 text-stone pointer-events-none">▾</span>
+                </div>
+              </div>
+
+              <!-- 留言 -->
+              <div>
+                <label for="message" class="block text-xs text-stone tracking-[0.3em] mb-3">
+                  留 言 内 容 <span class="text-cinnabar">*</span>
+                </label>
+                <textarea id="message" name="message" required class="input-classic" rows="6" placeholder="愿闻其详…"></textarea>
+              </div>
+
+              <!-- 提交 -->
+              <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-6">
+                <p class="text-xs text-stone leading-relaxed">
+                  提交即视为同意我们处理您的留言信息<br/>用于回复与内容改进。
+                </p>
+                <button type="submit" class="btn-classic btn-cinnabar">
+                  <span>寄 出 留 言</span><span>→</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- 成功提示 -->
+            <div id="form-success" class="hidden flex-col items-center text-center py-10 mt-8 border-t border-cinnabar/20">
+              <div class="seal mx-auto mb-4" style="background:#2c4a5a;border-color:#2c4a5a;">谢</div>
+              <p class="font-display text-2xl tracking-widest text-ink mb-3">感 谢 留 言</p>
+              <p class="text-sm text-stone">我们已收到您的留言，将尽快查阅并回复。</p>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 引言区 -->
+  <section class="py-24 bg-paper">
+    <div class="max-w-3xl mx-auto px-6 text-center reveal">
+      <div class="divider-cloud mb-8"><span class="divider-ornament"></span></div>
+      <p class="font-display text-2xl md:text-3xl text-ink-soft leading-loose tracking-wider">
+        以文会友，<br/>
+        以友辅仁。
+      </p>
+      <p class="mt-6 text-stone italic font-serif-en text-lg">— 《论语 · 颜渊》</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-ink text-rice/70 pt-20 pb-10">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="grid md:grid-cols-4 gap-10 mb-16">
+        <div class="md:col-span-2">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="seal seal-sm">思源</span>
+            <div>
+              <p class="font-display text-xl tracking-widest text-rice">思源文境</p>
+              <p class="font-en text-xs tracking-[0.3em] text-gold">SINOVIBE</p>
+            </div>
+          </div>
+          <p class="text-sm leading-loose max-w-md mb-6">
+            传承国学智慧，解析玄学命理。<br/>以理性与敬畏，分享中华传统文化的源远流长。
+          </p>
+          <p class="font-serif-en italic text-gold/70 text-sm">"Stillness is the doorway to wisdom."</p>
+        </div>
+        <div>
+          <h4 class="font-display tracking-widest text-rice mb-6 text-base">页 面</h4>
+          <ul class="space-y-3 text-sm">
+            <li><a href="index.html" class="hover:text-cinnabar-light transition-colors">首页</a></li>
+            <li><a href="guoxue.html" class="hover:text-cinnabar-light transition-colors">国学文化</a></li>
+            <li><a href="xuanxue.html" class="hover:text-cinnabar-light transition-colors">玄学命理</a></li>
+            <li><a href="articles.html" class="hover:text-cinnabar-light transition-colors">文章专栏</a></li>
+            <li><a href="about.html" class="hover:text-cinnabar-light transition-colors">关于本站</a></li>
+            <li><a href="contact.html" class="hover:text-cinnabar-light transition-colors">留言咨询</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display tracking-widest text-rice mb-6 text-base">联 络</h4>
+          <ul class="space-y-3 text-sm">
+            <li class="text-rice/60">邮箱：contact@sinovibe.cn</li>
+            <li class="text-rice/60">公众号：思源文境</li>
+            <li class="text-rice/60">微博：@思源文境</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-rice/10 pt-8 mb-8">
+        <p class="text-xs leading-relaxed text-rice/50 text-center tracking-wider max-w-3xl mx-auto">
+          ⚠ 免责声明：本站所有内容为传统国学玄学文化科普，仅供传统文化学习交流，
+          不构成任何人生决策、命理决策、风水决策建议，请勿迷信。
+        </p>
+      </div>
+
+      <div class="border-t border-rice/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-rice/40 tracking-wider">
+        <p>© <span data-year>2026</span> 思源文境 · Sinovibe. All rights reserved.</p>
+        <p class="font-en italic">Crafted with reverence for Chinese heritage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="返回顶部">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
